@@ -16,6 +16,9 @@ class SongsController < ApplicationController
     @song = Song.new 
   end 
   
+  def create 
+    
+  
   
   private 
   def find_song 

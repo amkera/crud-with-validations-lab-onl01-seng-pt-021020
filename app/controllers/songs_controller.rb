@@ -25,6 +25,9 @@ class SongsController < ApplicationController
     end
   end 
   
+  def update 
+    find_song
+  
   
   
   

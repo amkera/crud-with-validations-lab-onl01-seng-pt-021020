@@ -6,4 +6,7 @@ class Song < ApplicationRecord
   }
   
   validates :released, inclusion: { in: [true, false] }
+  
+  validates :released_year, presence: true
+  
 end

@@ -28,7 +28,12 @@ class SongsController < ApplicationController
   def update 
     find_song
     if @song.update(song_params)
-      
+      redirect_to @song 
+    else 
+      render :edit 
+    end 
+  end 
+  
   
   
   

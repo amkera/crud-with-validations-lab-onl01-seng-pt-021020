@@ -9,7 +9,8 @@ class SongsController < ApplicationController
   end 
   
   def edit 
-    find_song
+    #find_song
+    @song = Song.find(params[:id])
   end 
   
   def new 
@@ -46,6 +47,7 @@ class SongsController < ApplicationController
   private 
   def find_song 
     @song = Song.find(params[:id])
+    
   end 
   
   #STRONG PARAMS
